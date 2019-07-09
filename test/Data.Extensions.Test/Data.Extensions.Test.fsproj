@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <AssemblyName>Maestria.Data.Extensions.Test</AssemblyName>
+        <RootNamespace>Maestria.Data.Extensions.Test</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="DataReaderUtilsTest.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentCast" Version="1.0.2" />
+        <PackageReference Include="FsUnit" Version="3.4.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.1" />
+        <PackageReference Include="System.Data.SQLite.Core" Version="1.0.110" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Data.Extensions\Data.Extensions.csproj" />
+    </ItemGroup>
+
+</Project>

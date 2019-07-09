@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Maestria.Data.Extensions</AssemblyName>
+        <RootNamespace>Maestria.Data.Extensions</RootNamespace>
+    </PropertyGroup>
+
+</Project>
