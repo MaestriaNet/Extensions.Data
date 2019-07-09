@@ -20,7 +20,17 @@ using Maestria.Data.Extensions;
 Then in your application code, use fluent syntax: 
 
 ```csharp
+var connection = // you .net data provider db connection
+var cmd = connection.CreateCommand();
+cmd.CommandText = "select * from...";
+var reader = cmd.ExecuteReader();
+reader.Read();
 
+var int16Value = reader.GetInt16("fieldName");
+var int32Value = reader.GetInt32("fieldName");
+var decimalValue = reader.GetDecimal("fieldName");
+var decimalSafeValue = reader.GetDecimalSafe("fieldName", 0);   // output is 0 when invalid field value 
+var decimalSafeValue2 = reader.GetDecimalSafe("fieldName");     // output is nyll when invalid field value
 ```
 
 Where can I get it?
