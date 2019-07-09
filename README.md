@@ -1,15 +1,14 @@
 # Maestria Data Extensions
 
-[![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
-[![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast)
+[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/branch/master)
+[![NuGet](https://img.shields.io/nuget/v/Maestria.Data.Extensions.svg)](https://www.nuget.org/packages/Maestria.Data.Extensions)
+
 
 ### What is Maestria Project?
-This project provider max productivity and elegangy for your code.
-
+Project to provide maximum productivity and elegance to your code.
 
 ### What is Maestria Data Extensions?
-
-This package provider a fluent extensions syntax to get data from IDataReader
+This package provider a fluent extensions syntax to get data from IDataReader implementations.
 
 ### How do I get started?
 First, import "Maestria.Data.Extensions" reference:
