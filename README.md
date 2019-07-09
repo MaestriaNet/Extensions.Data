@@ -8,7 +8,7 @@
 Project to provide maximum productivity and elegance to your code.
 
 ### What is Maestria Data Extensions?
-This package provider a fluent extensions syntax to get data from IDataReader implementations.
+Extension functions package for IDataReader implementations.
 
 ### How do I get started?
 First, import "Maestria.Data.Extensions" reference:
@@ -25,7 +25,7 @@ Then in your application code, use fluent syntax:
 
 Where can I get it?
 
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/FluentCast/) from the package manager console:
+First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/Maestria.Data.Extensions/) from the package manager console:
 
 ```
 PM> Install-Package Maestria.Data.Extensions
