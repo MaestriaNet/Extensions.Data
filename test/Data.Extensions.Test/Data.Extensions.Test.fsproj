@@ -7,7 +7,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="DataReaderUtilsTest.fs" />
+        <Compile Include="ConstTest.fs" />
+        <Compile Include="FakeDatabase.fs" />
+        <Compile Include="GetInt16Test.fs" />
+        <Compile Include="GetInt32Test.fs" />
+        <Compile Include="GetInt64Test.fs" />
+        <Compile Include="GetDecimalTest.fs" />
+        <Compile Include="GetFloatTest.fs" />
+        <Compile Include="GetDoubleTest.fs" />
+        <Compile Include="GetDateTimeTest.fs" />
+        <Compile Include="GetStringTest.fs" />
     </ItemGroup>
 
     <ItemGroup>
