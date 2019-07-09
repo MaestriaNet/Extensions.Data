@@ -25,6 +25,13 @@ module ``Unsafe`` =
         (fun () -> "select IntNull from temp" |> prepareReader |> fun reader -> reader.GetInt16("IntNull") |> ignore)
         |> should throw typeof<Exception>
 
+    [<Test>]
+    let ``Get Int16 from string field``() =
+        "select StringNumber from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetInt16("StringNumber")
+        |> should equal StringNumberToFixedPointExpected
+
 module ``Safe`` =
     [<Test>]
     let ``Get Int16 Safe: OK``() =
