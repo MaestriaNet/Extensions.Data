@@ -3,6 +3,7 @@ open NUnit.Framework
 open FsUnit
 open Const
 open System
+open System.Data.SqlTypes
 open Maestria.Data.Extensions
 open FluentCast
 open FakeDatabase
@@ -18,18 +19,25 @@ module ``Unsafe`` =
     [<Test>]
     let ``Get Int16 required: Fail by invalid field name``() =
         (fun () -> "select IntNull from temp" |> prepareReader |> fun reader -> reader.GetInt16("InvalidFieldName") |> ignore)
-        |> should throw typeof<Exception>
+        |> should throw typeof<IndexOutOfRangeException>
 
     [<Test>]
     let ``Get Int16 required: fail by null field value``() =
         (fun () -> "select IntNull from temp" |> prepareReader |> fun reader -> reader.GetInt16("IntNull") |> ignore)
-        |> should throw typeof<Exception>
+        |> should throw typeof<SqlNullValueException>
 
     [<Test>]
     let ``Get Int16 from string field``() =
         "select StringNumber from temp"
         |> prepareReader
         |> fun reader -> reader.GetInt16("StringNumber")
+        |> should equal StringNumberToFixedPointExpected
+
+    [<Test>]
+    let ``Get Int16 from string field (pt-Br)``() =
+        "select StringNumberPtBr from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetInt16("StringNumberPtBr", CulturePtBr)
         |> should equal StringNumberToFixedPointExpected
 
 module ``Safe`` =
@@ -41,10 +49,10 @@ module ``Safe`` =
     [<Test>]
     let ``Get Int16 Safe: Fail by invalid field name``() =
         (fun () -> "select IntNull from temp" |> prepareReader |> fun reader -> reader.GetInt16Safe("InvalidFieldName") |> ignore)
-        |> should throw typeof<Exception>
+        |> should throw typeof<IndexOutOfRangeException>
 
         (fun () -> "select IntNull from temp" |> prepareReader |> fun reader -> reader.GetInt16Safe("InvalidFieldName", 0s) |> ignore)
-        |> should throw typeof<Exception>
+        |> should throw typeof<IndexOutOfRangeException>
 
     [<Test>]
     let ``Get Int16 Safe: Null field value``() =
@@ -55,3 +63,17 @@ module ``Safe`` =
     let ``Get Int16 Safe: Null field value returning default value``() =
         "select IntNull from temp" |> prepareReader |> fun reader -> reader.GetInt16Safe("IntNull", FixedPointExpected.ToInt16())
         |> should equal FixedPointExpected
+
+    [<Test>]
+    let ``Get Int16 Safe from string field``() =
+        "select StringNumber from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetInt16Safe("StringNumber")
+        |> should equal StringNumberToFixedPointExpected
+
+    [<Test>]
+    let ``Get Int16 Safe from string field (pt-Br)``() =
+        "select StringNumberPtBr from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetInt16Safe("StringNumberPtBr", CulturePtBr)
+        |> should equal StringNumberToFixedPointExpected

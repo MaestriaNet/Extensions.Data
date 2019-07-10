@@ -9,6 +9,7 @@
     <ItemGroup>
         <Compile Include="ConstTest.fs" />
         <Compile Include="FakeDatabase.fs" />
+        <Compile Include="Internal\DataReaderExtensionsTest.fs" />
         <Compile Include="GetInt16Test.fs" />
         <Compile Include="GetInt32Test.fs" />
         <Compile Include="GetInt64Test.fs" />
@@ -17,6 +18,7 @@
         <Compile Include="GetDoubleTest.fs" />
         <Compile Include="GetDateTimeTest.fs" />
         <Compile Include="GetStringTest.fs" />
+        <Compile Include="GetValueTest.fs" />
     </ItemGroup>
 
     <ItemGroup>

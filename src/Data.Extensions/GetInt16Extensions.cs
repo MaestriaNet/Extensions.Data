@@ -7,13 +7,18 @@ namespace Maestria.Data.Extensions
 {
     public static class GetInt16Extensions
     {
-        public static int GetInt16(this IDataRecord dataRecord, string column) =>
-            dataRecord.GetValue(column, v => Convert.ToInt16(Convert.ToSingle(v, CultureInfo.InvariantCulture)), default, true);
+        public static int GetInt16(
+            this IDataRecord dataRecord, string column, IFormatProvider provider = null) =>
+            dataRecord.GetValue(column, v => Convert.ToInt16(
+                Convert.ToSingle(v, provider ?? CultureInfo.InvariantCulture)));
 
-        public static int? GetInt16Safe(this IDataRecord dataRecord, string column) =>
-            dataRecord.GetValueSafe(column, v => Convert.ToInt16(Convert.ToSingle(v, CultureInfo.InvariantCulture)), null, false);
+        public static int? GetInt16Safe(
+            this IDataRecord dataRecord, string column, IFormatProvider provider = null) =>
+            dataRecord.GetValueSafe(column, v => Convert.ToInt16(
+                Convert.ToSingle(v, provider ?? CultureInfo.InvariantCulture)));
 
-        public static int GetInt16Safe(this IDataRecord dataRecord, string column, short @default) =>
-            dataRecord.GetValue(column, v => Convert.ToInt16(Convert.ToSingle(v, CultureInfo.InvariantCulture)), @default, false);
+        public static int GetInt16Safe(
+            this IDataRecord dataRecord, string column, short @default, IFormatProvider provider = null) =>
+            dataRecord.GetInt16Safe(column, provider) ?? @default;
     }
 }

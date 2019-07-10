@@ -1,52 +1,66 @@
 using System;
 using System.Data;
+using System.Data.SqlTypes;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("Maestria.Data.Extensions.Test")]
 namespace Maestria.Data.Extensions.Internal
 {
-    public static class DataReaderExtensions
+    internal static class DataReaderExtensions
     {
-        public static T GetValue<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunc,
-            T @default, bool throwIfNull)
-            where T : struct
+        public static T GetValue<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunction)
         {
-            var result = GetValueSafe(dataRecord, columnName, convertFunc, @default, throwIfNull);
-            return result ?? @default;
+            var index = dataRecord.GetOrdinal(columnName);
+            if (index == -1)
+                throw new IndexOutOfRangeException($"Invalid data field name \"{columnName}\".");
+
+            if (dataRecord.IsDBNull(index))
+                throw new SqlNullValueException($"Null value for field \"{columnName}\".");
+
+//            var value = dataRecord.GetValue(index);
+            return convertFunction(dataRecord.GetValue(index));
         }
 
-        public static T? GetValueSafe<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunc,
-            T? @default, bool throwIfNull)
+        public static T? GetValueSafe<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunction)
             where T : struct
         {
-            var columnIndex = dataRecord.GetOrdinal(columnName);
-            if (columnIndex == -1)
-                throw new Exception($"Coluna {columnName} não existe no data reader!");
+            var index = dataRecord.GetOrdinal(columnName);
+            if (index == -1)
+                throw new IndexOutOfRangeException($"Invalid data field name \"{columnName}\".");
 
-            if (dataRecord.IsDBNull(columnIndex))
+            if (dataRecord.IsDBNull(index))
+                return null;
+
+            var value = dataRecord.GetValue(index);
+            try
             {
-                if (throwIfNull)
-                    throw new Exception($"Valor nulo para coluna {columnName}!");
-                return @default;
+                return convertFunction(value);
             }
-
-            return convertFunc(dataRecord.GetValue(columnIndex));
+            catch
+            {
+                return null;
+            }
         }
 
-        public  static T GetValueSafe<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunc,
-            T @default, bool throwIfNull)
+        public  static T GetValueSafeObject<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunction)
             where T : class
         {
-            var columnIndex = dataRecord.GetOrdinal(columnName);
-            if (columnIndex == -1)
-                throw new Exception($"Coluna {columnName} não existe no data reader!");
+            var index = dataRecord.GetOrdinal(columnName);
+            if (index == -1)
+                throw new IndexOutOfRangeException($"Invalid data field name \"{columnName}\".");
 
-            if (dataRecord.IsDBNull(columnIndex))
+            if (dataRecord.IsDBNull(index))
+                return null;
+
+            var value = dataRecord.GetValue(index);
+            try
             {
-                if (throwIfNull)
-                    throw new Exception($"Valor nulo para coluna {columnName}!");
-                return @default;
+                return convertFunction(value);
             }
-
-            return convertFunc(dataRecord.GetValue(columnIndex));
+            catch
+            {
+                return null;
+            }
         }
     }
 }
