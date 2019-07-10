@@ -1,8 +1,9 @@
 # Maestria Data Extensions
 
-[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/branch/master)
-[![NuGet](https://img.shields.io/nuget/v/Maestria.Data.Extensions.svg)](https://www.nuget.org/packages/Maestria.Data.Extensions)
-
+| Build |[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/branch/master)|
+|-------|---|
+| NuGet |[![NuGet](https://img.shields.io/nuget/v/Maestria.Data.Extensions.svg)](https://www.nuget.org/packages/Maestria.Data.Extensions)|
+| MyGet |[![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.Data.Extensions.svg)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Data.Extensions)|
 
 ### What is Maestria Project?
 Project to provide maximum productivity and elegance to your code.

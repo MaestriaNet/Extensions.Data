@@ -32,7 +32,7 @@ module ``Unsafe`` =
         |> should equal StringDateExpected
 
     [<Test>]
-    let ``Get DateTime from string field (pt-BR)``() =
+    let ``Get DateTime from string field pt-BR``() =
         "select StringDatePtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetDateTime("StringDatePtBr", CulturePtBr)
@@ -70,7 +70,7 @@ module ``Safe`` =
         |> should equal StringDateExpected
 
     [<Test>]
-    let ``Get DateTime Safe from string field (pt-Br)``() =
+    let ``Get DateTime Safe from string field pt-Br``() =
         "select StringDatePtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetDateTimeSafe("StringDatePtBr", CulturePtBr)
