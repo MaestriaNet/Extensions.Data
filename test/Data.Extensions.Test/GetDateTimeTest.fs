@@ -24,19 +24,19 @@ module ``Unsafe`` =
         (fun () -> "select DateNull from temp" |> prepareReader |> fun reader -> reader.GetDateTime("DateNull") |> ignore)
         |> should throw typeof<SqlNullValueException>
 
-//    [<Test>]
-//    let ``Get DateTime from string field``() =
-//        "select StringDate from temp"
-//        |> prepareReader
-//        |> fun reader -> reader.GetDateTime("StringDate")
-//        |> should equal StringDateExpected
-//
-//    [<Test>]
-//    let ``Get DateTime from string field (pt-Br)``() =
-//        "select StringDate from temp"
-//        |> prepareReader
-//        |> fun reader -> reader.GetDateTime("StringDate")
-//        |> should equal StringDateExpected
+    [<Test>]
+    let ``Get DateTime from string field``() =
+        "select StringDate from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetDateTime("StringDate")
+        |> should equal StringDateExpected
+
+    [<Test>]
+    let ``Get DateTime from string field (pt-BR)``() =
+        "select StringDatePtBr from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetDateTime("StringDatePtBr", CulturePtBr)
+        |> should equal StringDateExpected
 
 module ``Safe`` =
     [<Test>]
@@ -62,16 +62,16 @@ module ``Safe`` =
         "select DateNull from temp" |> prepareReader |> fun reader -> reader.GetDateTimeSafe("DateNull", DateTimeExpected.ToDateTime())
         |> should equal DateTimeExpected
 
-//    [<Test>]
-//    let ``Get DateTime Safe from string field``() =
-//        "select StringDate from temp"
-//        |> prepareReader
-//        |> fun reader -> reader.GetDateTimeSafe("StringDate")
-//        |> should equal StringDateExpected
-//
-//    [<Test>]
-//    let ``Get DateTime Safe from string field (pt-Br)``() =
-//        "select StringDatePtBr from temp"
-//        |> prepareReader
-//        |> fun reader -> reader.GetDateTimeSafe("StringDatePtBr", CulturePtBr)
-//        |> should equal StringDateExpected
+    [<Test>]
+    let ``Get DateTime Safe from string field``() =
+        "select StringDate from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetDateTimeSafe("StringDate")
+        |> should equal StringDateExpected
+
+    [<Test>]
+    let ``Get DateTime Safe from string field (pt-Br)``() =
+        "select StringDatePtBr from temp"
+        |> prepareReader
+        |> fun reader -> reader.GetDateTimeSafe("StringDatePtBr", CulturePtBr)
+        |> should equal StringDateExpected

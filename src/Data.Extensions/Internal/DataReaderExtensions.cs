@@ -17,7 +17,6 @@ namespace Maestria.Data.Extensions.Internal
             if (dataRecord.IsDBNull(index))
                 throw new SqlNullValueException($"Null value for field \"{columnName}\".");
 
-//            var value = dataRecord.GetValue(index);
             return convertFunction(dataRecord.GetValue(index));
         }
 
