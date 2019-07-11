@@ -1,9 +1,10 @@
 # Maestria Data Extensions
 
-| Build |[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/branch/master)|
-|-------|---|
-| NuGet |[![NuGet](https://img.shields.io/nuget/v/Maestria.Data.Extensions.svg)](https://www.nuget.org/packages/Maestria.Data.Extensions)|
-| MyGet |[![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.Data.Extensions.svg)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Data.Extensions)|
+[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/branch/master)
+[![NuGet](https://buildstats.info/nuget/Maestria.Data.Extensions)](https://www.nuget.org/packages/Maestria.Data.Extensions)
+[![MyGet](https://buildstats.info/myget/maestrianet/Maestria.Data.Extensions)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Data.Extensions)
+
+[![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/dataextensions?branch=master)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/history?branch=master)
 
 ### What is Maestria Project?
 Project to provide maximum productivity and elegance to your code.
