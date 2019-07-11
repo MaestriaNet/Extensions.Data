@@ -7,11 +7,11 @@
         <Company>Fábio Monteiro Naspolini</Company>
         <Title>Maestria.Data.Extensions</Title>
         <Description>Extension functions package for IDataReader implementations.</Description>
-        <PackageTags>Data System.Data DataReader DbDataReader IDataReader IDataRecord Reader DataReaderExtensions Extensions Fluent Functional</PackageTags>
+        <PackageTags>Data System.Data DataReader DbDataReader IDataReader IDataRecord Reader DataReaderExtensions Extensions Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
         <RepositoryUrl>ttps://github.com/MaestriaNet/DataExtensions</RepositoryUrl>
         <PackageProjectUrl>https://github.com/MaestriaNet/DataExtensions</PackageProjectUrl>
         <License>https://github.com/MaestriaNet/DataExtensions/blob/master/LICENSE</License>
-        <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/DataExtensions/master/resources/icon-96.png</PackageIconUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/DataExtensions/master/resources/icon.png</PackageIconUrl>
     </PropertyGroup>
     
     <PropertyGroup>
