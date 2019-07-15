@@ -21,20 +21,27 @@ First, import "Maestria.Data.Extensions" reference:
 using Maestria.Data.Extensions;
 ```
 
-Then in your application code, use fluent syntax: 
+Then in your application code, use fluent syntax to obtain field value:
 
 ```csharp
-var connection = // you .net data provider db connection
+// Configuring data connection
+var connection = // your .net data provider db connection
 var cmd = connection.CreateCommand();
 cmd.CommandText = "select * from...";
 var reader = cmd.ExecuteReader();
 reader.Read();
 
+// In this case throw exception when field value is null
 var int16Value = reader.GetInt16("fieldName");
 var int32Value = reader.GetInt32("fieldName");
 var decimalValue = reader.GetDecimal("fieldName");
+
+// With safe method when field value is null, it will return default value of the second argument or INullable<?> for data type 
 var decimalSafeValue = reader.GetDecimalSafe("fieldName", 0);   // output is 0 when invalid field value 
 var decimalSafeValue2 = reader.GetDecimalSafe("fieldName");     // output is nyll when invalid field value
+
+// But safe methods, throw exception when field name is invalid
+var temp = reader.GetDecimalSafe("invalid field name"); // throw IndexOutOfRangeException
 ```
 
 Where can I get it?
