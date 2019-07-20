@@ -32,7 +32,7 @@ module ``Unsafe`` =
         |> should equal StringNumberToFixedPointExpected
 
     [<Test>]
-    let ``Get Int64 from string field (pt-Br)``() =
+    let ``Get Int64 from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetInt64("StringNumberPtBr", CulturePtBr)
@@ -70,7 +70,7 @@ module ``Safe`` =
         |> should equal StringNumberToFixedPointExpected
 
     [<Test>]
-    let ``Get Int64 Safe from string field (pt-Br)``() =
+    let ``Get Int64 Safe from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetInt64Safe("StringNumberPtBr", CulturePtBr)

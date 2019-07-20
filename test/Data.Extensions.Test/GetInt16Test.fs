@@ -34,7 +34,7 @@ module ``Unsafe`` =
         |> should equal StringNumberToFixedPointExpected
 
     [<Test>]
-    let ``Get Int16 from string field (pt-Br)``() =
+    let ``Get Int16 from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetInt16("StringNumberPtBr", CulturePtBr)
@@ -72,7 +72,7 @@ module ``Safe`` =
         |> should equal StringNumberToFixedPointExpected
 
     [<Test>]
-    let ``Get Int16 Safe from string field (pt-Br)``() =
+    let ``Get Int16 Safe from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetInt16Safe("StringNumberPtBr", CulturePtBr)

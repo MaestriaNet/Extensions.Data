@@ -32,7 +32,7 @@ module ``Unsafe`` =
         |> should (equalWithin 0.0001) StringNumberToFloatingPointExpected
 
     [<Test>]
-    let ``Get Float from string field (pt-Br)``() =
+    let ``Get Float from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetFloat("StringNumberPtBr", CulturePtBr)
@@ -70,7 +70,7 @@ module ``Safe`` =
         |> should (equalWithin 0.0001) StringNumberToFloatingPointExpected
 
     [<Test>]
-    let ``Get Float Safe from string field (pt-Br)``() =
+    let ``Get Float Safe from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetFloatSafe("StringNumberPtBr", CulturePtBr)

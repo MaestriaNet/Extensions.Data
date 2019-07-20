@@ -32,7 +32,7 @@ module ``Unsafe`` =
         |> should equal StringNumberToFloatingPointExpected
 
     [<Test>]
-    let ``Get Decimal from string field (pt-Br)``() =
+    let ``Get Decimal from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetDecimal("StringNumberPtBr", CulturePtBr)
@@ -70,7 +70,7 @@ module ``Safe`` =
         |> should equal StringNumberToFloatingPointExpected
 
     [<Test>]
-    let ``Get Decimal Safe from string field (pt-Br)``() =
+    let ``Get Decimal Safe from string field pt-Br``() =
         "select StringNumberPtBr from temp"
         |> prepareReader
         |> fun reader -> reader.GetDecimalSafe("StringNumberPtBr", CulturePtBr)
