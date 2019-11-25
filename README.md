@@ -6,15 +6,18 @@
 
 [![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/dataextensions?branch=master)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/history?branch=master)
 
-### What is Maestria Data Extensions?
+## What is Maestria Data Extensions?
+
 Extension functions package for IDataReader implementations.
 
-### What is Maestria Project?
+## What is Maestria Project?
+
 This library is part of Maestria Project.
 
 Maestria is a project to provide maximum productivity and elegance to your code.
 
-### How do I get started?
+## How do I get started?
+
 First, import "Maestria.Data.Extensions" reference:
 
 ```csharp
@@ -48,11 +51,12 @@ Where can I get it?
 
 First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/Maestria.Data.Extensions/) from the package manager console:
 
-```
+```bash
 PM> Install-Package Maestria.Data.Extensions
 ```
 
 or install from the dotnet cli command line:
-```
+
+```bash
 > dotnet add package Maestria.Data.Extensions
-``` 
+```
