@@ -3,7 +3,7 @@ image: Visual Studio 2017
 configuration: Release
 dotnet_csproj:
   patch: true
-  file: 'src\Data.Extensions\Data.Extensions.csproj'
+  file: 'src\Data.Extensions.csproj'
   version: '1.0.3'
   package_version: '1.0.3'
   assembly_version: '1.0.3'
@@ -16,5 +16,5 @@ build_script:
 test_script:
   - ps: dotnet test --test-adapter-path:. --logger:Appveyor
 artifacts:
-  - path: src\Data.Extensions\bin\Release\*.nupkg
+  - path: src\bin\Release\*.nupkg
     name: Nuget Package
