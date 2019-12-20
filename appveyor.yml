@@ -18,3 +18,12 @@ test_script:
 artifacts:
   - path: src\bin\Release\*.nupkg
     name: Nuget Package
+deploy:
+  - provider: Environment
+    name: Maestria MyGet
+    on:
+      branch: master
+  - provider: Environment
+    name: Maestria NuGet
+    on:
+      APPVEYOR_REPO_TAG: true    
