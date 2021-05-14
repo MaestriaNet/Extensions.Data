@@ -6,6 +6,8 @@
 
 [![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/dataextensions?branch=master)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/history?branch=master)
 
+[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+
 ## What is Maestria Data Extensions?
 
 Extension functions package for IDataReader implementations.
@@ -60,3 +62,10 @@ or install from the dotnet cli command line:
 ```bash
 > dotnet add package Maestria.Data.Extensions
 ```
+
+[![buy-me-a-coffee](resources/buy-me-a-coffee.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+[![smile.png](resources/smile.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+
+If my contributions have helped you, please help me buying a coffee :D
+
+[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
