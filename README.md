@@ -18,6 +18,20 @@ This library is part of Maestria Project.
 
 Maestria is a project to provide maximum productivity and elegance to your code.
 
+## Where can I get it?
+
+First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/Maestria.Data.Extensions/) from the package manager console:
+
+```bash
+PM> Install-Package Maestria.Data.Extensions
+```
+
+or install from the dotnet cli command line:
+
+```bash
+> dotnet add package Maestria.Data.Extensions
+```
+
 ## How do I get started?
 
 First, import "Maestria.Data.Extensions" reference:
@@ -47,20 +61,6 @@ var decimalSafeValue2 = reader.GetDecimalSafe("fieldName");     // output is nyl
 
 // But safe methods, throw exception when field name is invalid
 var temp = reader.GetDecimalSafe("invalid field name"); // throw IndexOutOfRangeException
-```
-
-Where can I get it?
-
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/Maestria.Data.Extensions/) from the package manager console:
-
-```bash
-PM> Install-Package Maestria.Data.Extensions
-```
-
-or install from the dotnet cli command line:
-
-```bash
-> dotnet add package Maestria.Data.Extensions
 ```
 
 [![buy-me-a-coffee](resources/buy-me-a-coffee.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
