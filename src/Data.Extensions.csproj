@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>Maestria.Data.Extensions</PackageId>
-        <Version>1.0.4</Version>
+        <Version>1.0.5</Version>
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
         <Title>Maestria.Data.Extensions</Title>
@@ -13,12 +13,13 @@
         <License>https://github.com/MaestriaNet/DataExtensions/blob/master/LICENSE</License>
         <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/DataExtensions/master/resources/icon.png</PackageIconUrl>
     </PropertyGroup>
-    
+
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <AssemblyName>Maestria.Data.Extensions</AssemblyName>
         <RootNamespace>Maestria.Data.Extensions</RootNamespace>
         <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     </PropertyGroup>
 
 </Project>

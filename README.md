@@ -3,6 +3,8 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/branch/master)
 [![NuGet](https://buildstats.info/nuget/Maestria.Data.Extensions)](https://www.nuget.org/packages/Maestria.Data.Extensions)
 [![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.Data.Extensions?label=MyGet)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Data.Extensions)
+[![Apimundo](https://img.shields.io/badge/Maestria.Data.Extensions%20API-Apimundo-728199.svg)](https://apimundo.com/organizations/nuget-org/nuget-feeds/public/packages/Maestria.Data.Extensions/versions/latest?tab=types)
+
 
 [![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/dataextensions?branch=master)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/history?branch=master)
 
