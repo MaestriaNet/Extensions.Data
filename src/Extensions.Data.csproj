@@ -1,23 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <PackageId>Maestria.Data.Extensions</PackageId>
-        <Version>1.0.5</Version>
+        <PackageId>Maestria.Extensions.Data</PackageId>
+        <Version>1.1.0</Version>
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
-        <Title>Maestria.Data.Extensions</Title>
+        <Title>Maestria.Extensions.Data</Title>
+        <NoWarn>CS1591</NoWarn>
         <Description>Extension functions package for IDataReader implementations.</Description>
         <PackageTags>Data System.Data DataReader DbDataReader IDataReader IDataRecord Reader DataReaderExtensions Extensions Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
-        <RepositoryUrl>ttps://github.com/MaestriaNet/DataExtensions</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/MaestriaNet/DataExtensions</PackageProjectUrl>
-        <License>https://github.com/MaestriaNet/DataExtensions/blob/master/LICENSE</License>
-        <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/DataExtensions/master/resources/icon.png</PackageIconUrl>
+        <RepositoryUrl>ttps://github.com/MaestriaNet/Extensions.Data</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/MaestriaNet/Extensions.Data</PackageProjectUrl>
+        <License>https://github.com/MaestriaNet/Extensions.Data/blob/master/LICENSE</License>
+        <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/Extensions.Data/master/resources/icon.png</PackageIconUrl>
     </PropertyGroup>
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <AssemblyName>Maestria.Data.Extensions</AssemblyName>
-        <RootNamespace>Maestria.Data.Extensions</RootNamespace>
+        <AssemblyName>Maestria.Extensions.Data</AssemblyName>
+        <RootNamespace>Maestria.Extensions.Data</RootNamespace>
         <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
         <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     </PropertyGroup>

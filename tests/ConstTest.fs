@@ -1,4 +1,4 @@
-module Maestria.Data.Extensions.Test.Const
+module Maestria.Extensions.Data.Test.Const
 open System
 open System
 open System.Globalization

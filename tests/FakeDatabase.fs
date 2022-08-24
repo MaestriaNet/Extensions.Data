@@ -1,6 +1,6 @@
-module Maestria.Data.Extensions.Test.FakeDatabase
+module Maestria.Extensions.Data.Test.FakeDatabase
 open System.Data
-open Maestria.Data.Extensions.Test
+open Maestria.Extensions.Data.Test
 open System.Data.Common
 open System.Data.SQLite
 open NUnit.Framework

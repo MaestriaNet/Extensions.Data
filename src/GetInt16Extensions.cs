@@ -1,9 +1,9 @@
 using System;
 using System.Data;
 using System.Globalization;
-using Maestria.Data.Extensions.Internal;
+using Maestria.Extensions.Data.Internal;
 
-namespace Maestria.Data.Extensions
+namespace Maestria.Extensions.Data
 {
     public static class GetInt16Extensions
     {

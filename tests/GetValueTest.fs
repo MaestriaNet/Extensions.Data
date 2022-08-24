@@ -1,10 +1,10 @@
-module Maestria.Data.Extensions.Test.``Get Value``
+module Maestria.Extensions.Data.Test.``Get Value``
 open NUnit.Framework
 open FsUnit
 open Const
 open System
 open System.Data.SqlTypes
-open Maestria.Data.Extensions
+open Maestria.Extensions.Data
 open FakeDatabase
 
 module ``Unsafe`` =

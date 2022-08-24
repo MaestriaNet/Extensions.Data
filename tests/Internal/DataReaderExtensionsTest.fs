@@ -1,9 +1,9 @@
-module Maestria.Data.Extensions.Test.Internal.``Data Reader Extensions``
+module Maestria.Extensions.Data.Test.Internal.``Data Reader Extensions``
 open System
 open NUnit.Framework
 open FsUnit
-open Maestria.Data.Extensions.Test.FakeDatabase
-open Maestria.Data.Extensions.Internal
+open Maestria.Extensions.Data.Test.FakeDatabase
+open Maestria.Extensions.Data.Internal
 
 module ``Convert Safe`` =
     [<Test>]

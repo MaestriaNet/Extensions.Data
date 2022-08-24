@@ -3,8 +3,8 @@ using System.Data;
 using System.Data.SqlTypes;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Maestria.Data.Extensions.Test")]
-namespace Maestria.Data.Extensions.Internal
+[assembly: InternalsVisibleTo("Maestria.Extensions.Data.Test")]
+namespace Maestria.Extensions.Data.Internal
 {
     internal static class DataReaderExtensions
     {

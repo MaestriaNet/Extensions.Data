@@ -1,7 +1,7 @@
 using System.Data;
-using Maestria.Data.Extensions.Internal;
+using Maestria.Extensions.Data.Internal;
 
-namespace Maestria.Data.Extensions
+namespace Maestria.Extensions.Data
 {
     public static class GetValueExtensions
     {

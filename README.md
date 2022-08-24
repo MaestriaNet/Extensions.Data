@@ -1,12 +1,12 @@
 # Maestria Data Extensions
 
-[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/branch/master)
-[![NuGet](https://buildstats.info/nuget/Maestria.Data.Extensions)](https://www.nuget.org/packages/Maestria.Data.Extensions)
-[![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.Data.Extensions?label=MyGet)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Data.Extensions)
-[![Apimundo](https://img.shields.io/badge/Maestria.Data.Extensions%20API-Apimundo-728199.svg)](https://apimundo.com/organizations/nuget-org/nuget-feeds/public/packages/Maestria.Data.Extensions/versions/latest?tab=types)
+[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/maestria-extensions-data/branch/master)
+[![NuGet](https://buildstats.info/nuget/Maestria.Extensions.Data)](https://www.nuget.org/packages/Maestria.Extensions.Data)
+[![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.Extensions.Data?label=MyGet)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Extensions.Data)
+[![Apimundo](https://img.shields.io/badge/Maestria.Extensions.Data%20API-Apimundo-728199.svg)](https://apimundo.com/organizations/nuget-org/nuget-feeds/public/packages/Maestria.Extensions.Data/versions/latest?tab=types)
 
 
-[![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/dataextensions?branch=master)](https://ci.appveyor.com/project/fabionaspolini/dataextensions/history?branch=master)
+[![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/maestria-extensions-data?branch=master)](https://ci.appveyor.com/project/fabionaspolini/maestria-extensions-data/history?branch=master)
 
 [![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
 
@@ -22,24 +22,24 @@ Maestria is a project to provide maximum productivity and elegance to your code.
 
 ## Where can I get it?
 
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/Maestria.Data.Extensions/) from the package manager console:
+First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/Maestria.Extensions.Data/) from the package manager console:
 
 ```bash
-PM> Install-Package Maestria.Data.Extensions
+PM> Install-Package Maestria.Extensions.Data
 ```
 
 or install from the dotnet cli command line:
 
 ```bash
-> dotnet add package Maestria.Data.Extensions
+> dotnet add package Maestria.Extensions.Data
 ```
 
 ## How do I get started?
 
-First, import "Maestria.Data.Extensions" reference:
+First, import "Maestria.Extensions.Data" reference:
 
 ```csharp
-using Maestria.Data.Extensions;
+using Maestria.Extensions.Data;
 ```
 
 Then in your application code, use fluent syntax to obtain field value:

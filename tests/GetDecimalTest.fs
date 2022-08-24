@@ -1,10 +1,10 @@
-module Maestria.Data.Extensions.Test.``Get Decimal``
+module Maestria.Extensions.Data.Test.``Get Decimal``
 open NUnit.Framework
 open FsUnit
 open Const
 open System
 open System.Data.SqlTypes
-open Maestria.Data.Extensions
+open Maestria.Extensions.Data
 open FluentCast
 open FakeDatabase
 

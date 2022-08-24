@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
-        <AssemblyName>Maestria.Data.Extensions.Test</AssemblyName>
-        <RootNamespace>Maestria.Data.Extensions.Test</RootNamespace>
+        <AssemblyName>Maestria.Extensions.Data.Test</AssemblyName>
+        <RootNamespace>Maestria.Extensions.Data.Test</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -31,7 +31,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\src\Data.Extensions.csproj" />
+      <ProjectReference Include="..\src\Extensions.Data.csproj" />
     </ItemGroup>
 
 </Project>
