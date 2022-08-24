@@ -1,4 +1,4 @@
-# Maestria Data Extensions
+# Maestria.Extensions.Data
 
 [![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/maestria-extensions-data/branch/master)
 [![NuGet](https://buildstats.info/nuget/Maestria.Extensions.Data)](https://www.nuget.org/packages/Maestria.Extensions.Data)
@@ -10,7 +10,7 @@
 
 [![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
 
-## What is Maestria Data Extensions?
+## What is Maestria.Extensions.Data?
 
 Extension functions package for IDataReader implementations.
 
@@ -22,7 +22,7 @@ Maestria is a project to provide maximum productivity and elegance to your code.
 
 ## Where can I get it?
 
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria Data Extensions](https://www.nuget.org/packages/Maestria.Extensions.Data/) from the package manager console:
+First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.Extensions.Data](https://www.nuget.org/packages/Maestria.Extensions.Data/) from the package manager console:
 
 ```bash
 PM> Install-Package Maestria.Extensions.Data
