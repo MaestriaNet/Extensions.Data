@@ -2,17 +2,18 @@
 
     <PropertyGroup>
         <PackageId>Maestria.Extensions.Data</PackageId>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
         <Title>Maestria.Extensions.Data</Title>
         <NoWarn>CS1591</NoWarn>
         <Description>Extension functions package for IDataReader implementations.</Description>
         <PackageTags>Data System.Data DataReader DbDataReader IDataReader IDataRecord Reader DataReaderExtensions Extensions Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
-        <RepositoryUrl>ttps://github.com/MaestriaNet/Extensions.Data</RepositoryUrl>
+        <RepositoryUrl>https://github.com/MaestriaNet/Extensions.Data</RepositoryUrl>
         <PackageProjectUrl>https://github.com/MaestriaNet/Extensions.Data</PackageProjectUrl>
         <License>https://github.com/MaestriaNet/Extensions.Data/blob/master/LICENSE</License>
         <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/Extensions.Data/master/resources/icon.png</PackageIconUrl>
+        <LangVersion>9</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup>
