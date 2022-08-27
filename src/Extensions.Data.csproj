@@ -13,7 +13,7 @@
         <PackageTags>Data System.Data DataReader DbDataReader IDataReader IDataRecord Reader DataReaderExtensions Extensions Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
         <RepositoryUrl>https://github.com/MaestriaNet/Extensions.Data</RepositoryUrl>
         <Title>Maestria.Extensions.Data</Title>
-        <Version>1.1.2</Version>
+        <Version>1.1.3</Version>
     </PropertyGroup>
 
     <PropertyGroup>
