@@ -4,6 +4,7 @@ using System.Data.SqlTypes;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Maestria.Extensions.Data.Test")]
+
 namespace Maestria.Extensions.Data.Internal
 {
     internal static class DataReaderExtensions
@@ -41,7 +42,7 @@ namespace Maestria.Extensions.Data.Internal
             }
         }
 
-        public  static T GetValueSafeObject<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunction)
+        public static T GetValueSafeObject<T>(this IDataRecord dataRecord, string columnName, Func<object, T> convertFunction)
             where T : class
         {
             var index = dataRecord.GetOrdinal(columnName);
