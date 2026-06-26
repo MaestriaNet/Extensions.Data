@@ -1,6 +1,5 @@
 <Solution>
   <Folder Name="/Solution Items/">
-    <File Path="appveyor.yml" />
     <File Path="README.md" />
   </Folder>
   <Project Path="src/Extensions.Data.csproj" />

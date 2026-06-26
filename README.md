@@ -1,14 +1,19 @@
 # Maestria.Extensions.Data
 
-[![Build status](https://ci.appveyor.com/api/projects/status/rwh6n141nm97vm0t/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/maestria-extensions-data/branch/master)
-[![NuGet](https://buildstats.info/nuget/Maestria.Extensions.Data)](https://www.nuget.org/packages/Maestria.Extensions.Data)
-[![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.Extensions.Data?label=MyGet)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Extensions.Data)
+[![NuGet Version](https://img.shields.io/nuget/v/Maestria.Extensions.Data)](https://www.nuget.org/packages/Maestria.Extensions.Data/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Maestria.Extensions.Data)](https://www.nuget.org/packages/Maestria.Extensions.Data/)
 [![Apimundo](https://img.shields.io/badge/Maestria.Extensions.Data%20API-Apimundo-728199.svg)](https://apimundo.com/organizations/nuget-org/nuget-feeds/public/packages/Maestria.Extensions.Data/versions/latest?tab=types)
 
+---
 
-[![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/maestria-extensions-data?branch=master)](https://ci.appveyor.com/project/fabionaspolini/maestria-extensions-data/history?branch=master)
+[![buy-me-a-coffee](https://raw.githubusercontent.com/MaestriaNet/Extensions/master/resources/buy-me-a-coffee.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+[![smile.png](https://raw.githubusercontent.com/MaestriaNet/Extensions/master/resources/smile.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
 
-[![donate](https://raw.githubusercontent.com/MaestriaNet/Extensions.Data/master/resources/btn_donate.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+If my contributions helped you, please help me buy a coffee :D
+
+[![donate](https://raw.githubusercontent.com/MaestriaNet/Extensions/master/resources/btn_donate.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+
+---
 
 ## What is Maestria.Extensions.Data?
 
@@ -64,6 +69,8 @@ var decimalSafeValue2 = reader.GetDecimalSafe("fieldName");     // output is nyl
 // But safe methods, throw exception when field name is invalid
 var temp = reader.GetDecimalSafe("invalid field name"); // throw IndexOutOfRangeException
 ```
+
+---
 
 [![buy-me-a-coffee](https://raw.githubusercontent.com/MaestriaNet/Extensions.Data/master/resources/buy-me-a-coffee.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
 [![smile.png](https://raw.githubusercontent.com/MaestriaNet/Extensions.Data/master/resources/smile.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
