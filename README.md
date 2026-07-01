@@ -1,4 +1,4 @@
-# Maestria.Extensions.Data
+markdown# Maestria.Extensions.Data
 
 [![NuGet Version](https://img.shields.io/nuget/v/Maestria.Extensions.Data)](https://www.nuget.org/packages/Maestria.Extensions.Data/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Maestria.Extensions.Data)](https://www.nuget.org/packages/Maestria.Extensions.Data/)
