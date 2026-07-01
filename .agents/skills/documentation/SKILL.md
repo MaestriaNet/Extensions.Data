@@ -1,6 +1,6 @@
 ---
 name: documentation
-description: Guidelines and instructions for generating C# extension methods usage documentation for the Maestria.Extensions project in `docs/usage`.
+description: Guidelines and instructions for generating C# extension methods usage documentation for the Maestria.Extensions.Data.
 ---
 
 # Maestria.Extensions.Data Documentation Skill
