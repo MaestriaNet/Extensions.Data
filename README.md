@@ -27,16 +27,10 @@ Maestria is a project to provide maximum productivity and elegance to your code.
 
 ## Where can I get it?
 
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.Extensions.Data](https://www.nuget.org/packages/Maestria.Extensions.Data/) from the package manager console:
+Install the [Maestria.Extensions.Data](https://www.nuget.org/packages/Maestria.Extensions.Data/) using the command line:
 
 ```bash
-PM> Install-Package Maestria.Extensions.Data
-```
-
-or install from the dotnet cli command line:
-
-```bash
-> dotnet add package Maestria.Extensions.Data
+dotnet add package Maestria.Extensions.Data
 ```
 
 ## How do I get started?
